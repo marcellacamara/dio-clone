@@ -37,6 +37,10 @@ const schema = yup
 const Login = () => {
   const navigate = useNavigate();
 
+  const handleClickRegister = () => {
+    navigate("/register");
+  };
+
   const {
     control,
     handleSubmit,
@@ -95,7 +99,7 @@ const Login = () => {
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>
-              <CriarText>Criar conta</CriarText>
+              <CriarText onClick={handleClickRegister}>Criar conta</CriarText>
             </Row>
           </Wrapper>
         </Column>

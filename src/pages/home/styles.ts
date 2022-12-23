@@ -38,4 +38,9 @@ export const TextContent = styled.p`
   line-height: 22px;
 
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 `;
